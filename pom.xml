@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.orionlibs</groupId>
     <artifactId>orion-csv</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <name>Orion CSV</name>
     <description>Java CSV library</description>
     <url>https://github.com/orionlibs/orion-csv</url>
@@ -243,7 +243,7 @@
         <dependency>
             <groupId>io.github.orionlibs</groupId>
             <artifactId>orion-file-system</artifactId>
-            <version>1.0.1</version>
+            <version>1.0.2</version>
         </dependency>
     </dependencies>
 </project>
