@@ -3,6 +3,7 @@ package io.github.orionlibs.orion_csv;
 import com.opencsv.CSVWriter;
 import io.github.orionlibs.orion_csv.tasks.BuildCSVBodyTask;
 import io.github.orionlibs.orion_csv.tasks.BuildCSVHeaderTask;
+import io.github.orionlibs.orion_object.ResourceCloser;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -39,7 +40,7 @@ public class CSVWriterService
 
     public void closeCSVFile()
     {
-        CloseResourceTask.closeResource(this.writer);
+        ResourceCloser.closeResource(this.writer);
     }
 
 

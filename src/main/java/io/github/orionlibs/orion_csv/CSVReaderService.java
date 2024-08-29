@@ -3,6 +3,7 @@ package io.github.orionlibs.orion_csv;
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
 import io.github.orionlibs.orion_file_system.file.FileService;
+import io.github.orionlibs.orion_object.ResourceCloser;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -53,7 +54,7 @@ public class CSVReaderService
 
     public void closeCSVFile()
     {
-        CloseResourceTask.closeResource(this.reader);
+        ResourceCloser.closeResource(this.reader);
     }
 
 
